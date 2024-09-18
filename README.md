@@ -5,3 +5,5 @@
 
 # Advance Sanity Check 
 1. Langkah Pertama adalah memasukkan ncat pada terminal wsl, command sebagai berikut `ncat 10.15.42.60 44000`
+2. Pertanyaan akan bermunculan pada kesempatan kali ini dimulai dengan pertanyaan Username
+![Screenshot (26)](https://github.com/user-attachments/assets/b617c2ac-1baf-4483-956a-72c1a9ec7f9b)
