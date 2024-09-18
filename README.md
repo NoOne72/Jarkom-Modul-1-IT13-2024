@@ -29,3 +29,10 @@
 4. Untuk port bisa langsung dilihat dari wireshark, bisa di double tap
 5. Dan inilah hasil akhir beserta flag
 ![Screenshot (38)](https://github.com/user-attachments/assets/aeecbb8d-1abf-42b4-82a7-c9bd819ce97e)
+
+# Pegawai Negeri Sebelah
+1. Langkah Pertama adalah memasukkan ncat pada terminal wsl, command sebagai berikut `ncat 10.15.42.60 53000`
+2. Lalu ketika membuka file wireshark saya mencoba memasukkan `frame contains "nNnM%coQuF"` sesuai soal
+3. Maka satu file berisi seluruh data pegawai akan muncul dan kita bisa menggunakan fitur search didalamnya untuk mendeteksi password
+4. Ini berlaku untuk soal soal berikutnya hingga kita mendapatkan flag seperti dibawah ini
+   ![image](https://github.com/user-attachments/assets/42b067b7-c3dd-4b8b-8cf3-695e91fe7e4a)
