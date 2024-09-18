@@ -45,3 +45,47 @@
 5. Terakhir kita bisa memasukkan `http && ip.src eq 172.21.88.207` cari yang found sehingga kita bisa mendapatkan kredensial yang digunakan untuk login sehingga kita bisa mendapatkan flag sebagai berikut
    ![image](https://github.com/user-attachments/assets/f58a9ced-3cbc-44a0-94d8-221050025d3e)
 
+# Corporate Breach
+1. Memasukkan ncat pada terminal wsl, command sebagai berikut ```nc 10.15.42.60 51000```
+2. Mencari nama attacker dengan filter ```frame contains "name"```
+
+![Screenshot (188)](https://github.com/user-attachments/assets/0b5bce88-4587-4d41-9259-543e26362a71)
+
+Tertangkap satu nama yaitu Nakhimov.
+3. Mencari email attacker dengan filter ```frame contains "email"```
+
+![Screenshot (189)](https://github.com/user-attachments/assets/bd8e29d7-56ff-4e26-9b2e-70366b2ac220)
+
+Tertangkap satu email anomali yaitu jarkomsupport@gmail.com beserta password nya yaitu j4rk0mg4c0rbg.
+
+![Screenshot (201)](https://github.com/user-attachments/assets/c7e0558e-9cf8-4b40-8232-c905cfd9d7ab)
+
+Bingo! flag ditemukan: JarkomIT{supp0rt_k0k_l3m4h_bg_P7NQjdgXKOLniE880qHL5pMvMG6ftOhBjl1G7kNX0iXCL4qTvFlBG6}
+
+# Surprise
+1. Memasukkan ncat pada terminal wsl, command sebagai berikut ```nc 10.15.42.60 48500```
+2. Mencari service yang digunakan pada FTP server dengan meng-follow TCP stream lalu melihat versinya dipaling atas
+
+![Screenshot (251)](https://github.com/user-attachments/assets/79918ed3-2c03-4946-b1be-09b605fb8625)
+
+3. Terdapat satu file script cpp pada salah satu file FTP yaitu ```g0tcha.cpp```
+
+![Screenshot (253)](https://github.com/user-attachments/assets/6ee09d46-48ab-40c6-b98b-55b7471d7790)
+
+4. Isi dari ```g0tcha.cpp``` bisa dilihat dan coba jalaankan scriptnya.
+
+![Screenshot (252)](https://github.com/user-attachments/assets/88b6c488-1cff-40b7-94bd-29ba1a67e41b)
+
+![image](https://github.com/user-attachments/assets/738c4487-49fd-4e62-857d-fcf755a3169c)
+
+Terdapat string teks ```g0tchu n0w l1ttl3 m0us3```
+
+![Screenshot (256)](https://github.com/user-attachments/assets/da137914-b632-401c-97eb-4170b14e1c79)
+
+Bingo! flag ditemukan: JarkomIT{l1ttl3_m0us3_1n_th3_h0us3_hkvm32AFY4wmmHcX5apqbP3idG0XMKTttaQWbYxuu5K4fb4OsoJvTCHU}
+# inneRCE
+1. Memasukkan ncat pada terminal wsl, command sebagai berikut ```nc 10.15.42.60 44000```
+2. Pada clue terdapat kata websehll, coba lakukan filter ```frame contains "shell"```
+
+   ![Screenshot (194)](https://github.com/user-attachments/assets/3bf43e85-7ad9-4b5b-8ad4-4af629e881f1)
+
