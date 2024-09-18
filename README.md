@@ -83,6 +83,25 @@ Terdapat string teks ```g0tchu n0w l1ttl3 m0us3```
 ![Screenshot (256)](https://github.com/user-attachments/assets/da137914-b632-401c-97eb-4170b14e1c79)
 
 Bingo! flag ditemukan: JarkomIT{l1ttl3_m0us3_1n_th3_h0us3_hkvm32AFY4wmmHcX5apqbP3idG0XMKTttaQWbYxuu5K4fb4OsoJvTCHU}
+
+# Stegography
+1. Memasukkan ncat pada terminal wsl, command sebagai berikut ```nc 10.15.42.60 58000```
+2. Mencari jumlah file gambar dengan filtering ```frame contains "png"```. Terdapat 13 jumlah gambar PNG.
+
+![Screenshot (257)](https://github.com/user-attachments/assets/a30a5fca-8ee0-4ae9-85d0-c69a326dd50e)
+
+3. Menggunakan script untuk looping mengecek setiap gambar yang memiliki pesan.
+
+![image](https://github.com/user-attachments/assets/52e789b2-ea42-449f-ba6e-f220a5871af7)
+
+Gambar ATP, EH, KJK yang memiliki pesan terbalik
+
+4. Gambar ATP, EH, KJK yang memiliki pesan terbalik yang jika disusun berupa kalimat ```pahlawan keamanan siber```.
+
+![image](https://github.com/user-attachments/assets/2164221b-9cd9-4a4e-9760-3f3159d8ba4c)
+
+Bingo! flag ditemukan: JarkomIT{S3LaM4t_p4rA_PahL4WaN_YozIVHLQ4fsDceQ6cPoLi8WV5P5ssm9EGvCbxWpACSiW6kTeqyRShhC5}
+
 # inneRCE
 1. Memasukkan ncat pada terminal wsl, command sebagai berikut ```nc 10.15.42.60 44000```
 2. Pada clue terdapat kata websehll, coba lakukan filter ```frame contains "shell"```
