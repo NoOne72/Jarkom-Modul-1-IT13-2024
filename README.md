@@ -20,3 +20,12 @@
 ![Screenshot (35)](https://github.com/user-attachments/assets/c40bc018-8913-4db5-a615-7161ff58265c)
 3. Tampilan diatas akan menjawab kedua pertanyaan dari soal yang mana akan memberikan kita flag seperti dibawah ini 
 ![Screenshot (36)](https://github.com/user-attachments/assets/a9243e89-616e-4bff-a335-34589b1f6e5a)
+
+# EZ 
+1. Langkah Pertama adalah memasukkan ncat pada terminal wsl, command sebagai berikut `ncat 10.15.42.60 54000`
+2. Lalu karena pada terminal ada petunjuk ini merupakan string dengan sebuah spasi, saya mencoba dengan ide `frame contains " "` untuk mencari string dengan spasi
+3. Ketika sudah follow muncullah sepert ini
+ ![Screenshot (37)](https://github.com/user-attachments/assets/25a4ede2-94e0-4573-8584-c3b99f8fa8bb)
+4. Untuk port bisa langsung dilihat dari wireshark, bisa di double tap
+5. Dan inilah hasil akhir beserta flag
+![Screenshot (38)](https://github.com/user-attachments/assets/aeecbb8d-1abf-42b4-82a7-c9bd819ce97e)
