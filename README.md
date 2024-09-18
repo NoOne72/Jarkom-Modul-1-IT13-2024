@@ -36,3 +36,12 @@
 3. Maka satu file berisi seluruh data pegawai akan muncul dan kita bisa menggunakan fitur search didalamnya untuk mendeteksi password
 4. Ini berlaku untuk soal soal berikutnya hingga kita mendapatkan flag seperti dibawah ini
    ![image](https://github.com/user-attachments/assets/42b067b7-c3dd-4b8b-8cf3-695e91fe7e4a)
+
+# Illegal Breakthrough 
+1. Langkah Pertama adalah memasukkan ncat pada terminal wsl, command sebagai berikut `ncat 10.15.42.60 46000`
+2. Lalu coba follow filter destination paling atas dan itu sudah mencakup IP korban dan portnya
+3. Setelah itu untuk mendapatkan endpoint yang terdapat login bisa menggunakan `frame contains "username"`
+4. Lalu untuk mendapat tools bisa menggunakan `frame contains "-dev"` kita mendeteksi dari versinya dan format belakang sesuai clue soal
+5. Terakhir kita bisa memasukkan `http && ip.src eq 172.21.88.207` cari yang found sehingga kita bisa mendapatkan kredensial yang digunakan untuk login sehingga kita bisa mendapatkan flag sebagai berikut
+   ![image](https://github.com/user-attachments/assets/f58a9ced-3cbc-44a0-94d8-221050025d3e)
+
