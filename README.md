@@ -13,3 +13,10 @@
 6. Setelah itu ketika kita mendapatkan nama file extension tersebut, di tempat yang sama terdapat petunjuk mengenai pesan rahasia yang berada pada ppt peraturan jarkom
 7. Pesan tersebut yaitu `cGVud29yZA` yang mana dibutuhkan base64 decode untuk memecahkannya yaitu `penword`
 8. Jika sudah menemukan penword, maka flag akan diberikan.
+
+# FTP Login 
+1. Langkah Pertama adalah memasukkan ncat pada terminal wsl, command sebagai berikut `ncat 10.15.42.60 49000`
+2. Lalu ketika sudah masuk file, pada wireshark ketik `frame contains "200"` Karena kita mencari info login berhasil
+![Screenshot (35)](https://github.com/user-attachments/assets/c40bc018-8913-4db5-a615-7161ff58265c)
+3. Tampilan diatas akan menjawab kedua pertanyaan dari soal yang mana akan memberikan kita flag seperti dibawah ini 
+![Screenshot (36)](https://github.com/user-attachments/assets/a9243e89-616e-4bff-a335-34589b1f6e5a)
