@@ -111,6 +111,7 @@ Bingo! flag ditemukan: JarkomIT{S3LaM4t_p4rA_PahL4WaN_YozIVHLQ4fsDceQ6cPoLi8WV5P
 
    ![Screenshot (194)](https://github.com/user-attachments/assets/3bf43e85-7ad9-4b5b-8ad4-4af629e881f1)
 
+### Revisi
 # Gajah Terbang (Server Recon)
 1. Memasukkan ncat pada terminal wsl, command sebagai berikut ```nc 10.15.42.60 61000```
 
