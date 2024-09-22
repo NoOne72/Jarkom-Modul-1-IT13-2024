@@ -126,3 +126,23 @@ Bingo! flag ditemukan: JarkomIT{S3LaM4t_p4rA_PahL4WaN_YozIVHLQ4fsDceQ6cPoLi8WV5P
 ![Screenshot (262)](https://github.com/user-attachments/assets/8530f426-ed69-4d50-8f77-e29cc5d3aec3)
 
 Bingo! flag ditemukan: JarkomIT{Gy4tT_M5g_4U_UMJS6rsnT3SXBgukauo2xvPSC5k1JzgfUiqP9oGcMF4wQdaM3mw6PBiD1}
+
+# Packets Barrage
+1. Langkah Pertama adalah memasukkan ncat pada terminal wsl, command sebagai berikut `ncat 10.15.42.60 47000`
+2. Untuk IP Adress Attacker bisa memerhatikan Source dari yang paling atas yaitu ``` 172.21.80.1``` lalu untuk berapa percobaan bruteforce dari attacker bisa dilihat dari angka setelah panah yaitu ```1917```
+ ![image](https://github.com/user-attachments/assets/4c833333-64fa-4a7e-9ea9-e94fb903194b)
+3. Untuk mencari file, karena extension mirip dengan soal sebelumnya maka saya mencoba mengetik ```frame contains ".txt"``` dan ternyata dapat ditemukan setelah difollow
+   ![image](https://github.com/user-attachments/assets/ee1e0481-1964-488a-8cf5-53dbcbbd0b03)
+4.  File yang didownload setelah login adalah ```albatros.txt``` dan isi dari file adalah ```Der Rote Kampfflieger```
+5.  Flag yang saya dapatkan adalah  ```JarkomIT{th3_fly1ng_c1rcus_0f_w4r_ewr91yboq6hlKZD3w4qkG4Z755StJfTzrsoYetZ4Lq4PvKN4B9EjyACE}```
+
+# Rizzset
+1. Langkah Pertama adalah memasukkan ncat pada terminal wsl, command sebagai berikut ` ncat 10.15.42.60 59500`
+2. Pertama dari contoh format domain adalah www, maka saya mencoba melakukan `frame contains "www"` dan ternyata ditemukan `www.its.ac.id`
+3. IP nya masih tampak yaitu ` 103.94.189.5`
+   ![image](https://github.com/user-attachments/assets/86c41f03-9d2e-4732-a73f-2b70d29a8fe9)
+4. Lalu unuk JARM Fingerprint dari domain dengan menggunakan program JARM ditemukan `2ad2ad16d2ad2ad22c2ad2ad2ad2ad74aaecca9f9c4a3303863dfee62b241e`
+5. Flag yang saya dapatkan adalah `JarkomIT{Dn5_C0rR34t10n_mgyLj8NYZ3QUTqrQGolSe8I3rr1zZEmvWMkPzEUL26xrKpFQFlztJV1T5}`
+
+
+
