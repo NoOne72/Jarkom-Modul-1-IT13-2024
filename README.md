@@ -108,3 +108,18 @@ Bingo! flag ditemukan: JarkomIT{S3LaM4t_p4rA_PahL4WaN_YozIVHLQ4fsDceQ6cPoLi8WV5P
 
    ![Screenshot (194)](https://github.com/user-attachments/assets/3bf43e85-7ad9-4b5b-8ad4-4af629e881f1)
 
+# Gajah Terbang (Server Recon)
+1. Memasukkan ncat pada terminal wsl, command sebagai berikut ```nc 10.15.42.60 61000```
+
+![Screenshot (261)](https://github.com/user-attachments/assets/8480c441-60e3-486c-ac0c-d6dd576e894e)
+
+2. Terdapat singkatan PSQL yang merupakan kepanjangan dari database ```PostgreSQL```
+3. Server tersebut berjalan di port ```6969```
+4. Terlihat juga bahwa mereka memakai OS ```Debian```
+5. Terlihat username DBMS yaitu ```s1gm4``` dan passwordnya: ```sigmaskibidigyatrizzzz```
+6. Untuk banyak users saya mencoba dari 3 karena terdapat perintah ```WHERE id=3;``` dan ditemukan ada 4 users ternyata
+7. Email nya ada banyak dan saya bruteforce dan ditemukan email nya yaitu ```jojohermawan@gmail.com``` dan passwordnya yaitu ```admin1234```
+
+![Screenshot (262)](https://github.com/user-attachments/assets/8530f426-ed69-4d50-8f77-e29cc5d3aec3)
+
+Bingo! flag ditemukan: JarkomIT{Gy4tT_M5g_4U_UMJS6rsnT3SXBgukauo2xvPSC5k1JzgfUiqP9oGcMF4wQdaM3mw6PBiD1}
